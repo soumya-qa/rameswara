@@ -1,0 +1,19 @@
+.jzoom-init .img-box img{
+  max-width: 100%;
+}
+.jzoom-init .img-box div {
+  box-sizing: unset !important;
+}
+
+.jzoom-init .img-box div img {
+  width: auto !important;
+  max-width: inherit!important;
+}
+
+.jzoom-init .productZoom,
+.jzoom-init .productZoom-top,
+.jzoom-init .productZoom-left {
+  cursor: move;
+}
+
+/*# sourceMappingURL=jzoom.css.map */

@@ -1,0 +1,18 @@
+.events-pic {
+    margin-bottom: 30px;
+    display: block;
+}
+.events-pic img {
+    width: 100%;
+}
+.dropdown .dropdown-menu li .dropdown-toggle, .dropdown .dropdown-menu > a{ display:none !important; }
+
+nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu>li>a:hover {
+    background: #0062a6;
+}
+}
+@media (max-width: 992px) {
+    nav.navbar.bootsnav .navbar-nav {
+        width: 62% !important;
+    }
+}

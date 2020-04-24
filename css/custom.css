@@ -1,0 +1,1056 @@
+/* @font-face {
+  font-family: 'bebas_neueregular';
+  src: url("../fonts/landing-page/bebasneue-regular-webfont.woff2") format("woff2"), url("../fonts/landing-page/bebasneue-regular-webfont.woff") format("woff"), url("../fonts/landing-page/bebasneue-regular-webfont.ttf") format("truetype"), url("../fonts/landing-page/bebasneue-regular-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('https://cdn.4dconnect.com/rameswara/fonts/landing-page/bebasneue-regular-webfont.woff2') format('woff2'),
+    url('https://cdn.4dconnect.com/rameswara/fonts/landing-page/bebasneue-regular-webfont.woff') format('woff'),
+    url('https://cdn.4dconnect.com/rameswara/fonts/landing-page/bebasneue-regular-webfont.ttf') format('truetype'),
+    url('https://cdn.4dconnect.com/rameswara/fonts/landing-page/bebasneue-regular-webfont.svg#bebas_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body.landing {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  body.landing .px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  body.landing .pl-0 {
+    padding-left: 0;
+  }
+
+  body.landing .pl-md {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .pl-md {
+    padding-left: 0px;
+  }
+}
+
+body.landing .my-90 {
+  margin: 90px 0px;
+}
+
+body.landing .mb-30 {
+  margin-bottom: 30px;
+}
+
+body.landing .mb-60 {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  body.landing .mt-sm {
+    margin-top: 30px;
+  }
+}
+
+body.landing .amenities-icon-spacing {
+  margin: 60px 0px;
+}
+
+@media (min-width: 768px) {
+  body.landing .amenities-icon-spacing {
+    margin: 90px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  body.landing .amenities-icon-spacing [class*='col']+[class*='col'] {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  body.landing .amenities-icon-spacing+.amenities-icon-spacing {
+    margin-top: -30px;
+  }
+}
+
+body.landing .btn {
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 30px;
+  min-width: 300px;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+body.landing .btn.btn-type-1 {
+  background: #0028cd;
+  color: #ffffff;
+}
+
+body.landing .btn.btn-type-1:hover {
+  background: #a9d07d;
+}
+
+body.landing .btn.btn-type-2 {
+  background: #a9d07d;
+  color: #ffffff;
+}
+
+body.landing .btn.btn-type-2:hover {
+  background: #0270b5;
+}
+
+body.landing .icon-holder {
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+body.landing .zone {
+  text-align: center;
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .zone {
+    padding: 90px 0;
+  }
+}
+
+body.landing .zone .section-title {
+  font-family: 'bebas_neueregular';
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 0;
+  color: #0270b5;
+  letter-spacing: 4px;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone .section-title {
+    font-size: 30px;
+    letter-spacing: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .zone .section-title {
+    font-size: 48px;
+  }
+}
+
+body.landing .zone .subtitle {
+  font-size: 22px;
+  color: #a9d07d;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone .subtitle {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .zone .subtitle {
+    font-size: 25px;
+  }
+}
+
+body.landing .zone .section-title+p,
+body.landing .zone .subtitle+p {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+
+  body.landing .zone .section-title+p,
+  body.landing .zone .subtitle+p {
+    margin-top: 30px;
+  }
+}
+
+body.landing .zone p {
+  margin: 0;
+}
+
+body.landing .zone p+p {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone p+p {
+    margin-top: 30px;
+  }
+}
+
+body.landing .zone p+.btn,
+body.landing .zone p+.btn-inline {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+
+  body.landing .zone p+.btn,
+  body.landing .zone p+.btn-inline {
+    margin-top: 30px;
+  }
+}
+
+body.landing .zone .info-list {
+  text-align: left;
+}
+
+body.landing .zone .info-list li+li {
+  margin-top: 7px;
+}
+
+body.landing .zone .list-title {
+  margin: 0;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+body.landing .zone .image-wrap {
+  margin: 30px 0px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  body.landing .zone .image-wrap [class*='col']+[class*='col'] {
+    margin-top: 20px;
+  }
+}
+
+body.landing .zone #map {
+  height: 390px;
+  width: 100%;
+}
+
+body.landing .zone .btn-inline .btn+.btn {
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone .btn-inline .btn+.btn {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+body.landing .grey-bg {
+  background: #e6e1e1;
+}
+
+body.landing .zone-header {
+  padding: 17px 0;
+  background: #ffffff;
+  z-index: 55;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  height: 128px;
+}
+
+@media (max-width: 767px) {
+  body.landing .zone-header {
+    padding-top: 0;
+  }
+}
+
+body.landing .zone-header.shrink {
+  background-color: #ffffff;
+  height: 79px;
+  padding-top: 0;
+  -webkit-box-shadow: 0px 10px 11px -11px rgba(80, 80, 80, 0.4);
+  -moz-box-shadow: 0px 10px 11px -11px rgba(80, 80, 80, 0.4);
+  box-shadow: 0px 10px 11px -11px rgba(80, 80, 80, 0.4);
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-header.shrink .logo-holder {
+    height: 94px;
+  }
+
+  body.landing .zone-header.shrink .logo-holder img {
+    transform: scale(0.67);
+    transform-origin: top left;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+  }
+
+  body.landing .zone-header.shrink .header-top-nav {
+    display: none;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+  }
+}
+
+@media (max-width: 767px) {
+  body.landing .zone-header.shrink .logo-holder {
+    padding: 10px;
+    /* .open-menu{
+
+                        } */
+  }
+}
+
+body.landing .zone-header.shrink .primary-menu {
+  margin-top: 26px;
+}
+
+body.landing .zone-header .logo-holder {
+  padding-left: 15px;
+}
+
+body.landing .zone-header .logo-holder img {
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-header .logo-holder img {
+    width: 179px;
+    height: 94px;
+  }
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-header .logo-holder {
+    float: left;
+    margin-top: 0px;
+    padding-left: 0;
+    max-height: 94px;
+  }
+}
+
+body.landing .zone-header .topbar {
+  padding: 10px;
+  font-size: 14px;
+  transition: all 0.5s;
+  float: right;
+  width: 100%;
+  background: #e6e1e1;
+  margin-bottom: 10px;
+  transition: all 0.4s;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-header .topbar {
+    width: 72%;
+    background: transparent;
+    margin-bottom: 5px;
+  }
+}
+
+body.landing .zone-header .topbar .social-links {
+  text-align: right;
+}
+
+body.landing .zone-header .topbar .social-links li {
+  display: inline-block;
+  list-style: none;
+}
+
+body.landing .zone-header .topbar .social-links li+li {
+  margin-left: 2px;
+}
+
+body.landing .zone-header .topbar .social-links a {
+  color: #ffffff;
+  background: #0270b5;
+  font-size: 18px;
+  border-radius: 50%;
+  min-width: 38px;
+  display: inline-block;
+  min-height: 38px;
+  text-align: center;
+  line-height: 38px;
+  transition: 0.2s all ease;
+}
+
+@media (max-width: 767px) {
+  body.landing .zone-header .topbar .social-links a {
+    font-size: 13px;
+  }
+}
+
+body.landing .zone-header .topbar .social-links a:hover {
+  background: #e6e1e1;
+  transition: 0.2s all ease;
+}
+
+body.landing .zone-header .navbar .navbar-collapse {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  body.landing .zone-header .nav.primary-menu {
+    background: #ffffff;
+    height: 100vh;
+    margin-top: 0 !important;
+  }
+}
+
+body.landing .zone-header .nav.primary-menu a {
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+  body.landing .zone-header .nav.primary-menu a {
+    font-size: 14px;
+  }
+}
+
+body.landing .zone-header .nav.primary-menu a:hover {
+  background: none;
+  color: #0270b5;
+}
+
+body.landing .zone-header .nav.primary-menu a.active {
+  color: #0270b5;
+}
+
+@media (max-width: 767px) {
+  body.landing .zone-header .nav.primary-menu a.active {
+    background: #0270b5;
+    color: #ffffff;
+  }
+}
+
+body.landing .zone-header .nav.primary-menu a:focus {
+  background: none;
+}
+
+@media (max-width: 767px) {
+  body.landing .zone-header .nav.primary-menu li:first-child {
+    margin-top: 10px;
+  }
+}
+
+body.landing .zone-header .nav.primary-menu li.active a {
+  color: #0270b5;
+}
+
+@media (max-width: 767px) {
+  body.landing .zone-header .nav.primary-menu {
+    margin-top: 13px;
+  }
+
+  body.landing .zone-header .nav.primary-menu li {
+    padding: 0 15px;
+  }
+
+  body.landing .zone-header .nav.primary-menu li a {
+    /* background: $grey;*/
+    border-radius: 4px;
+  }
+
+  body.landing .zone-header .nav.primary-menu li.active a {
+    background: #0270b5;
+    color: #ffffff;
+  }
+
+  body.landing .zone-header .nav.primary-menu li+li {
+    margin-top: 5px;
+  }
+}
+
+body.landing .zone-jumbotron {
+  margin: 130px 0px 0px 0px;
+  height: calc(100vh - 130px);
+  background: url("https://cdn.4dconnect.com/rameswara/landing-page/banner1.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+body.landing .zone-jumbotron .caption {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  max-width: 550px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-jumbotron .caption {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+body.landing .zone-jumbotron .caption h1 {
+  font-size: 25px;
+  font-family: 'bebas_neueregular';
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-jumbotron .caption h1 {
+    font-size: 30px;
+    letter-spacing: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .zone-jumbotron .caption h1 {
+    font-size: 48px;
+  }
+}
+
+body.landing .zone-jumbotron .caption h1+p {
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-jumbotron .caption h1+p {
+    margin: 30px 0;
+  }
+}
+
+body.landing .zone-jumbotron.banner-2 {
+  background: url("https://cdn.4dconnect.com/rameswara/landing-page/banner2.png") no-repeat center;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-jumbotron.banner-2 .container {
+    height: 100%;
+  }
+
+  body.landing .zone-jumbotron.banner-2 .container .row {
+    height: 100%;
+  }
+
+  body.landing .zone-jumbotron.banner-2 .container .row [class*="col"] {
+    height: 100%;
+  }
+}
+
+body.landing .zone-jumbotron.banner-2 .container .caption {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body.landing .zone-jumbotron.banner-2 .container .caption {
+    padding: 100px 0 20px;
+  }
+}
+
+body.landing .zone-jumbotron.banner-2 .container .caption a {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body.landing .zone-jumbotron.banner-2 .container .caption h1 {
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+body.landing .zone-jumbotron.banner-2 .container .caption h1+a {
+  margin-top: 30px;
+}
+
+body.landing .zone-jumbotron.banner-2 .container .caption .btn {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body.landing .zone-jumbotron.banner-2 .container [class*="col"]:first-of-type {
+  min-height: 100px;
+}
+
+body.landing .zone-jumbotron.banner-2 .container .call-back-form {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-jumbotron.banner-2 .container .call-back-form {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+body.landing .zone-jumbotron.banner-2 .container .call-back-form .btn {
+  width: 100%;
+  min-width: auto;
+}
+
+body.landing .zone-jumbotron .offer-badge {
+  position: absolute;
+  bottom: 30px;
+  width: 200px;
+}
+
+body.landing .zone-jumbotron .offer-badge img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  body.landing .zone-jumbotron .offer-badge {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  body.landing .zone-jumbotron .offer-badge {
+    left: 30px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .zone-jumbotron .offer-badge {
+    left: 90px;
+  }
+}
+
+body.landing .modal .form .modal-content {
+  background: #acacac;
+}
+
+body.landing .modal .form .modal-content .modal-title {
+  color: #000000;
+}
+
+body.landing .modal .form .modal-content button.close {
+  color: #000000;
+  opacity: 1;
+}
+
+body.landing .modal .form .modal-content .modal-body .enquire-now {
+  padding: 20px 0px 0px;
+}
+
+body.landing .modal .form .modal-content .modal-body .enquire-now .btn {
+  min-width: auto;
+  width: 100%;
+}
+
+body.landing .modal .form .modal-content .modal-footer {
+  border-top: 0;
+}
+
+body.landing .zone.zone-overview {
+  background: url("https://cdn.4dconnect.com/rameswara/landing-page/water-bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+body.landing .zone.zone-overview .section-title {
+  color: #ffffff;
+}
+
+body.landing .zone.zone-why-reverview {
+  color: #000000;
+}
+
+body.landing .zone.zone-dynamic {
+  color: #000000;
+}
+
+body.landing .zone.zone-amenities .subtitle+p {
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone.zone-amenities .subtitle+p {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .zone.zone-amenities .subtitle+p {
+    margin-top: 30px;
+  }
+}
+
+body.landing .zone.zone-plans {
+  background: url("https://cdn.4dconnect.com/rameswara/landing-page/nightview.jpg") no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+body.landing .zone.zone-plans .section-title {
+  color: #ffffff;
+}
+
+body.landing .zone.zone-location {
+  padding-top: 0;
+}
+
+body.landing .zone.zone-location img {
+  margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  body.landing .zone.zone-location img {
+    max-width: 100%;
+  }
+}
+
+body.landing .zone.zone-footer {
+  background: #e6e1e1;
+}
+
+body.landing .zone.zone-footer .footer-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  body.landing .zone.zone-footer .footer-logo {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .zone.zone-footer .footer-logo {
+    text-align: left;
+  }
+}
+
+body.landing .zone.zone-footer .icon-holder {
+  height: 57px;
+}
+
+body.landing .zone.zone-footer a {
+  color: #000000;
+}
+
+body.landing .zone.zone-footer .copyright {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  body.landing .zone.zone-footer .copyright {
+    text-align: left;
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  body.landing .zone.zone-footer [class*='col']+[class*='col'] {
+    margin-top: 30px;
+  }
+}
+
+body.landing .call-back {
+  position: fixed;
+  top: 250px;
+  right: 0;
+  z-index: 9;
+}
+
+body.landing .call-back a {
+  position: absolute;
+  right: 0;
+}
+
+body.landing .call-back .call-back-form {
+  display: none;
+  margin-right: 38px;
+  width: 260px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  body.landing .call-back .call-back-form {
+    width: 370px;
+  }
+}
+
+body.landing .call-back .call-back-form form {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  body.landing .call-back .call-back-form form {
+    padding: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  body.landing .call-back .call-back-form form .btn {
+    min-width: 100%;
+  }
+}
+
+body.landing .enquire-now {
+  background: #acacac;
+  padding: 34px;
+}
+
+body.landing .enquire-now input.form-control {
+  height: 50px;
+  border-radius: 30px;
+}
+
+body.landing .enquire-now input.form-control:focus::-webkit-input-placeholder,
+body.landing .enquire-now textarea.form-control:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+body.landing .enquire-now input.form-control:focus::-moz-placeholder,
+body.landing .enquire-now textarea.form-control:focus::-moz-placeholder {
+  color: transparent;
+}
+
+body.landing .enquire-now input.form-control:focus:-ms-input-placeholder,
+body.landing .enquire-now textarea.form-control:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+body.landing .enquire-now input.form-control:focus:-moz-placeholder,
+body.landing .enquire-now textarea.form-control:focus:-moz-placeholder {
+  color: transparent;
+}
+
+body.landing .enquire-now textarea {
+  resize: none;
+}
+
+body.landing .enquire-now .form-control {
+  font-size: 17px;
+  color: #000000;
+  padding: 6px 25px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  body.landing .enquire-now .form-control {
+    font-size: 15px;
+    padding: 6px 15px;
+  }
+}
+
+@media (max-width: 374px) {
+  body.landing .enquire-now .form-control {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+}
+
+body.landing .enquire-now .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000000;
+}
+
+body.landing .enquire-now .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000000;
+}
+
+body.landing .enquire-now .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000000;
+}
+
+body.landing .enquire-now .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000000;
+}
+
+body.landing .enquire-now .select-box {
+  position: relative;
+}
+
+body.landing .enquire-now .select-box select {
+  -webkit-appearance: button;
+  outline: none;
+}
+
+body.landing .enquire-now .select-box select.form-control {
+  height: 50px;
+  border-radius: 30px;
+  padding-right: 35px;
+}
+
+body.landing .enquire-now .select-box:before {
+  content: "\f078";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  width: 45px;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 46px;
+  color: #0270b5;
+  pointer-events: none;
+}
+
+body.landing .enquire-now .btn.btn-type-2:hover {
+  background: #000000;
+}
+
+body.landing .scroll-top {
+  position: fixed;
+  bottom: 80px;
+  width: 100%;
+}
+
+body.landing .scroll-top .container {
+  position: relative;
+}
+
+body.landing .scroll-top .container #toTop {
+  display: none;
+  color: #a9d07d;
+  font-size: 60px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+@media (min-width: 768px) {
+  body.landing .scroll-top .container #toTop {
+    right: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .scroll-top .container #toTop {
+    right: -100px;
+  }
+}
+
+body.landing .modal-dialog {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  body.landing .modal-dialog {
+    width: 70%;
+  }
+}
+
+body.landing .modal-dialog .modal-header {
+  border-bottom: 0;
+}
+
+body.landing .modal-dialog .modal-header .section-title {
+  font-family: 'bebas_neueregular';
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 0;
+  color: #0270b5;
+  letter-spacing: 4px;
+}
+
+@media (min-width: 768px) {
+  body.landing .modal-dialog .modal-header .section-title {
+    font-size: 30px;
+    letter-spacing: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .modal-dialog .modal-header .section-title {
+    font-size: 48px;
+  }
+}
+
+body.landing .modal-dialog .modal-body .subtitle {
+  font-size: 22px;
+  color: #0270b5;
+  font-weight: 600;
+  margin: 0;
+  background: #a9d07d;
+  padding: 10px 15px;
+  margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+  body.landing .modal-dialog .modal-body .subtitle {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.landing .modal-dialog .modal-body .subtitle {
+    font-size: 25px;
+  }
+}
+
+body.landing .modal-dialog .modal-body ul {
+  padding: 0;
+}
+
+body.landing .modal-dialog .modal-body ul li {
+  list-style: none;
+  padding-left: 25px;
+  text-indent: -24px;
+}
+
+body.landing .modal-dialog .modal-body ul li:before {
+  content: "\f111";
+  font-family: FontAwesome;
+  margin-right: 15px;
+  font-size: 10px;
+}
+
+body.landing .modal-dialog .modal-body ul li.bold {
+  font-weight: 900;
+}
+
+body.landing .modal-dialog .modal-body ul.check {
+  padding: 0;
+}
+
+body.landing .modal-dialog .modal-body ul.check li {
+  list-style: none;
+  padding-left: 0;
+}
+
+body.landing .modal-dialog .modal-body ul.check li:before {
+  content: "\f046";
+  font-family: FontAwesome;
+  color: #0270b5;
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=custom.css.map */
